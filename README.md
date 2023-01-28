@@ -1,2 +1,1 @@
-# alu-shell
-shell project directory
+Shell pratice 

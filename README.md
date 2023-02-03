@@ -1,1 +1,1 @@
-Shell pratice 
+Shell permissions

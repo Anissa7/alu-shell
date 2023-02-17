@@ -1,2 +1,4 @@
 #!/usr/bin/env bash 
-3Displays To infinity and beyond indefinitely with a sleep 2 I am invincible when recieving a SIGTERM 
+3Displays To infinity and beyond indefinitely with a sleep 2 I am invincible when recieving a SIGTERM
+while :; do echo 'To infinity and beyond '; sleep 2;
+trap 'echo "I am invincible!!!"' SIGTERM ;done

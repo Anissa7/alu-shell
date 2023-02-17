@@ -1,6 +1,15 @@
 #!/usr/bin/env bash
-#A script that creates a file containing its PID displays terminate and deletes
-script="/var/run/myscript.pid"
-echo $$ > "$script"
-trap 'echo "I hate the kill command;rm "$cript"; exit' SIGTERM SIGQUIT
-while ;: do echo 'To infinity and beyond'; sleep 2;done
+#this bash script does 5 functions
+terminator() {
+	rm /var/run/myscript.pid
+	exit
+}
+echo "$$" > /var/run/myscript.pid
+while true
+do
+	echo "To infinty and beyond"
+	sleep 2
+	trap 'echo "I hate the kill command" &&terminator' SIGTERM
+	trap 'echo "Y U no love me?!"' SIGINT
+	trap 'terminator' SIGQUIT
+done

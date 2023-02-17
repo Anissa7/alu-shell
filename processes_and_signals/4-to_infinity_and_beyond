@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-# The bash script displays  Displays To infinity and beyond indfinitly with a sleep 2 in between each iteration
-   while :; do echo 'To infinity and beyond '; sleep 2; done 
+# The bash script displays To infinity and beyond indfinitly with a sleep 2 in between each iteration
+   while :; do echo 'To infinity and beyond'; sleep 2; done 
